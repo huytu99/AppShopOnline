@@ -5,6 +5,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.content.ContextCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -26,6 +27,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.example.demosaleapp.UtilsService.SharedPreferenceClass;
+import com.example.demosaleapp.UtilsService.UtilService;
 import com.google.android.material.navigation.NavigationView;
 
 import org.json.JSONArray;
@@ -42,15 +44,17 @@ public class MainActivity extends AppCompatActivity {
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle drawerToggle;
     private NavigationView navigationView;
-
+    private int sl;
     private RecyclerView recyclerView;
     private RequestQueue requestQueue;
-    private List<Product> productList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        if(UtilService.cartList == null){
+            UtilService.cartList = new ArrayList<>();
+        }
         sharedPreferenceClass = new SharedPreferenceClass(this);
 
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -171,5 +175,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         return super.onOptionsItemSelected(item);
+    }
+    public void tranhome() {
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.content,new HomeFragment());
+        fragmentTransaction.commit();
     }
 }

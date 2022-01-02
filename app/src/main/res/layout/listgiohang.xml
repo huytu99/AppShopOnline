@@ -3,10 +3,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:weightSum="10"
-    android:gravity="center"
     >
     <LinearLayout
         android:gravity="center"
@@ -22,12 +21,12 @@
             android:layout_margin="5dp"/>
     </LinearLayout>
     <LinearLayout
-        android:gravity="center"
         android:layout_weight="7"
         android:layout_height="match_parent"
         android:layout_width="0dp"
         android:layout_margin="5dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        >
         <TextView
             android:id="@+id/tenspgiohang"
             android:textSize="15dp"
@@ -43,7 +42,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <LinearLayout
-            android:gravity="center"
+
             android:orientation="horizontal"
             android:layout_height="wrap_content"
             android:layout_width="match_parent">
@@ -51,32 +50,32 @@
             <Button
                 android:id="@+id/btntrusl"
                 android:layout_width="50dp"
-                android:layout_height="wrap_content"
+                android:layout_height= "50dp"
                 android:layout_marginTop="3dp"
                 android:focusable="false"
                 android:text="-"
-                android:textSize="30dp"
+                android:textSize="15dp"
                 app:backgroundTint="#808080" />
 
             <Button
                 android:id="@+id/btnhtsl"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
                 android:layout_marginTop="3dp"
                 android:focusable="false"
                 android:text="1"
                 android:textColor="@color/black"
-                android:textSize="30dp"
+                android:textSize="15dp"
                 app:backgroundTint="#808080" />
 
             <Button
                 android:id="@+id/btncongsl"
                 android:layout_width="50dp"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:layout_marginTop="3dp"
                 android:focusable="false"
                 android:text="+"
-                android:textSize="30dp"
+                android:textSize="15dp"
                 app:backgroundTint="#808080" />
         </LinearLayout>
     </LinearLayout>

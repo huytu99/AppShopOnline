@@ -3,8 +3,8 @@ package com.example.demosaleapp;
 import java.io.Serializable;
 
 public class Product implements Serializable {
-    private String title, image, price;
-
+    private String title, image,price;
+    public Product(){}
     public String getTitle() {
         return title;
     }

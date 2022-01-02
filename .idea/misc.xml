@@ -3,6 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android/java_seminar/app/src/main/res/layout/activity_detail.xml" value="0.370242214532872" />
+        <entry key="..\:/Android/java_seminar/app/src/main/res/layout/activity_main.xml" value="0.2421875" />
+        <entry key="..\:/Android/java_seminar/app/src/main/res/layout/activity_payment.xml" value="0.4" />
+        <entry key="..\:/Android/java_seminar/app/src/main/res/layout/app_bar_layout.xml" value="0.1" />
+        <entry key="..\:/Android/java_seminar/app/src/main/res/layout/fragment_cart.xml" value="0.10727969348659004" />
+        <entry key="..\:/Android/java_seminar/app/src/main/res/layout/item.xml" value="0.2421875" />
+        <entry key="..\:/Android/java_seminar/app/src/main/res/layout/listgiohang.xml" value="0.264" />
+        <entry key="..\:/Android/java_seminar/app/src/main/res/layout/navigation_header.xml" value="0.176" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/AppShopOnline/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.28177083333333336" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/AppShopOnline/app/src/main/res/drawable/boder.xml" value="0.28177083333333336" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/AppShopOnline/app/src/main/res/drawable/btn_bg.xml" value="0.28177083333333336" />
@@ -41,7 +49,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Payment">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/teal_700"
+        app:titleTextColor="@color/white"
+        app:title="Thanh toán "></androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/editten"
+        android:background="@drawable/spinner"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:hint="   Nhập tên "></EditText>
+    <EditText
+        android:id="@+id/editsdt"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_height="50dp"
+        android:background="@drawable/spinner"
+        android:layout_marginTop="20dp"
+        android:hint="   Nhập sdt "></EditText>
+    <EditText
+        android:id="@+id/editdiachi"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_height="50dp"
+        android:background="@drawable/spinner"
+        android:layout_marginTop="20dp"
+        android:hint="   Nhập địa chỉ "></EditText>
+    <Button
+        android:id="@+id/btnmua"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xác nhận"></Button>
+    <Button
+        android:id="@+id/btnhuy"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hủy"></Button>
+
+</LinearLayout>
